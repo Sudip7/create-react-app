@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: webpack-dev-server
+    versions:
+    - 3.11.1
+  - dependency-name: "@babel/plugin-transform-regenerator"
+    versions:
+    - 7.10.4
+  - dependency-name: cross-spawn
+    versions:
+    - 7.0.1
+  - dependency-name: postcss-loader
+    versions:
+    - 3.0.0
